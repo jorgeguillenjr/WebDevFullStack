@@ -1,0 +1,270 @@
+/* Responsive Breakpoints */
+/* Mobile First Approach */
+
+/* Base (Mobile) */
+/* Default styles are for mobile */
+
+/* Small Tablets (480px and up) */
+@media (min-width: 480px) {
+  .container {
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+  }
+
+  .hero-title {
+    font-size: var(--font-size-4xl);
+  }
+
+  .hero-subtitle {
+    font-size: var(--font-size-lg);
+  }
+}
+
+/* Tablets (768px and up) */
+@media (min-width: 768px) {
+  .container {
+    padding-left: var(--space-8);
+    padding-right: var(--space-8);
+  }
+
+  .hero-title {
+    font-size: var(--font-size-5xl);
+  }
+
+  .hero-subtitle {
+    font-size: var(--font-size-xl);
+  }
+
+  .section-header h2 {
+    font-size: var(--font-size-4xl);
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .curriculum-timeline::before {
+    left: 50%;
+  }
+
+  .timeline-number {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .timeline-item {
+    flex-direction: row;
+  }
+
+  .timeline-item:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .timeline-content {
+    width: calc(50% - 40px);
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content {
+    margin-right: var(--space-10);
+    margin-left: 0;
+  }
+  
+  .timeline-item:nth-child(even) .timeline-content {
+    margin-left: var(--space-10);
+    margin-right: 0;
+  }
+
+  .instructor-profile {
+    flex-direction: row;
+  }
+
+  .instructor-image {
+    flex: 0 0 40%;
+  }
+}
+
+/* Small Desktops (1024px and up) */
+@media (min-width: 1024px) {
+  .container {
+    padding-left: var(--space-8);
+    padding-right: var(--space-8);
+  }
+
+  .hero-section .container {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .hero-stats {
+    justify-content: flex-start;
+  }
+
+  .hero-content {
+    margin-right: var(--space-8);
+    margin-bottom: 0;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .pricing-options {
+    flex-direction: row;
+  }
+
+  .footer-content {
+    flex-direction: row;
+  }
+
+  .nav-menu {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    padding: 0;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+}
+
+/* Large Desktops (1440px and up) */
+@media (min-width: 1440px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hero-title {
+    font-size: var(--font-size-6xl);
+  }
+
+  .section-header h2 {
+    font-size: var(--font-size-5xl);
+  }
+
+  .section-header p {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+/* Landscape Mobile Orientation */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero-section {
+    min-height: auto;
+    padding: var(--space-16) 0;
+  }
+
+  .hero-content {
+    margin-bottom: 0;
+  }
+
+  .code-content {
+    height: 200px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .header, .footer, .hero-scroll, .nav-toggle, .cta-button, .enrollment-form {
+    display: none !important;
+  }
+
+  body {
+    background-color: white;
+    color: black;
+    font-size: 12pt;
+  }
+
+  .container {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  section {
+    page-break-inside: avoid;
+    margin-bottom: 1cm;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  .curriculum-timeline::before {
+    display: none;
+  }
+
+  .feature-card, .pricing-card, .testimonial-content {
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  :root {
+    --color-primary: #0000FF;
+    --color-primary-dark: #0000CC;
+    --color-primary-light: #3333FF;
+    --color-primary-bg: rgba(0, 0, 255, 0.1);
+
+    --color-secondary: #008000;
+    --color-secondary-dark: #006600;
+    --color-secondary-light: #33A033;
+    --color-secondary-bg: rgba(0, 128, 0, 0.1);
+
+    --color-accent: #800080;
+    --color-accent-dark: #660066;
+    --color-accent-light: #A030A0;
+    --color-accent-bg: rgba(128, 0, 128, 0.1);
+  }
+
+  .cta-button.primary {
+    background-color: var(--color-primary);
+    color: white;
+    border: 2px solid black;
+  }
+
+  .cta-button.secondary {
+    background-color: white;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+  }
+
+  a:focus, button:focus, input:focus, select:focus, textarea:focus {
+    outline: 3px solid black;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .hero-scroll, .scroll-arrow {
+    animation: none !important;
+  }
+
+  [data-animate] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .typing {
+    animation: none !important;
+    border-right: none !important;
+  }
+}

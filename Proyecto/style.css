@@ -1,0 +1,98 @@
+/* Import CSS variables and modules */
+@import url('css/variables.css');
+@import url('css/reset.css');
+@import url('css/layout.css');
+@import url('css/components.css');
+@import url('css/animations.css');
+@import url('css/responsive.css');
+
+/* Additional custom styles */
+
+/* Error states for form fields */
+input.error, select.error {
+  border-color: var(--color-error);
+  background-color: rgba(239, 68, 68, 0.05);
+}
+
+.form-error {
+  color: var(--color-error);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-4);
+}
+
+.form-success {
+  text-align: center;
+  padding: var(--space-8);
+}
+
+.form-success h3 {
+  color: var(--color-success);
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-4);
+}
+
+.form-success p {
+  margin-bottom: var(--space-4);
+  color: var(--color-gray-700);
+}
+
+/* Code syntax highlighting */
+.code-content .keyword {
+  color: #FF79C6;
+}
+
+.code-content .function {
+  color: #50FA7B;
+}
+
+.code-content .string {
+  color: #F1FA8C;
+}
+
+.code-content .comment {
+  color: #6272A4;
+}
+
+.code-content .number {
+  color: #BD93F9;
+}
+
+/* Scroll to top button */
+.scroll-top {
+  position: fixed;
+  bottom: var(--space-6);
+  right: var(--space-6);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal) var(--transition-timing);
+  z-index: var(--z-index-fixed);
+}
+
+.scroll-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-top:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+}
+
+.scroll-top-arrow {
+  width: 12px;
+  height: 12px;
+  border-left: 2px solid var(--color-white);
+  border-top: 2px solid var(--color-white);
+  transform: rotate(45deg);
+  margin-top: 4px;
+}

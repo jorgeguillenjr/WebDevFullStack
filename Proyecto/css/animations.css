@@ -1,0 +1,198 @@
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0) translateX(-50%);
+  }
+  40% {
+    transform: translateY(-10px) translateX(-50%);
+  }
+  60% {
+    transform: translateY(-5px) translateX(-50%);
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkCursor {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--color-primary);
+  }
+}
+
+/* Scroll Arrow Animation */
+.scroll-arrow {
+  width: 20px;
+  height: 20px;
+  border-right: 2px solid var(--color-gray-400);
+  border-bottom: 2px solid var(--color-gray-400);
+  transform: rotate(45deg);
+  margin-top: var(--space-2);
+  animation: bounce 2s infinite;
+}
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn var(--transition-normal) var(--transition-timing);
+}
+
+.fade-in-up {
+  animation: fadeInUp var(--transition-normal) var(--transition-timing);
+}
+
+.fade-in-down {
+  animation: fadeInDown var(--transition-normal) var(--transition-timing);
+}
+
+.fade-in-left {
+  animation: fadeInLeft var(--transition-normal) var(--transition-timing);
+}
+
+.fade-in-right {
+  animation: fadeInRight var(--transition-normal) var(--transition-timing);
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Typing Animation for Code Window */
+.typing {
+  border-right: 2px solid var(--color-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  animation: 
+    typewriter 3s steps(40) 1s forwards,
+    blinkCursor 750ms steps(40) infinite;
+}
+
+/* Scroll Animation Triggers */
+[data-animate] {
+  opacity: 0;
+  transition: opacity var(--transition-normal) var(--transition-timing),
+              transform var(--transition-normal) var(--transition-timing);
+}
+
+[data-animate="fade-up"] {
+  transform: translateY(20px);
+}
+
+[data-animate="fade-down"] {
+  transform: translateY(-20px);
+}
+
+[data-animate="fade-left"] {
+  transform: translateX(-20px);
+}
+
+[data-animate="fade-right"] {
+  transform: translateX(20px);
+}
+
+[data-animate="zoom-in"] {
+  transform: scale(0.9);
+}
+
+[data-animate="zoom-out"] {
+  transform: scale(1.1);
+}
+
+[data-animate].animated {
+  opacity: 1;
+  transform: translate(0) scale(1);
+}
+
+/* Delay Classes */
+[data-delay="100"] {
+  transition-delay: 100ms;
+}
+
+[data-delay="200"] {
+  transition-delay: 200ms;
+}
+
+[data-delay="300"] {
+  transition-delay: 300ms;
+}
+
+[data-delay="400"] {
+  transition-delay: 400ms;
+}
+
+[data-delay="500"] {
+  transition-delay: 500ms;
+}
