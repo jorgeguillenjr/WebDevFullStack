@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeMaster | Fullstack Development Course for Beginners</title>
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/css/header.css" />
+  <link rel="stylesheet" href="/css/hero.css" />
+  <link rel="stylesheet" href="/css/features.css" />
+  <link rel="stylesheet" href="/css/curriculum.css" />
+  <link rel="stylesheet" href="/css/instructors.css" />
+  <link rel="stylesheet" href="/css/testimonials.css" />
+  <link rel="stylesheet" href="/css/pricing.css" />
+  <link rel="stylesheet" href="/css/faq.css" />
+  <link rel="stylesheet" href="/css/cta.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <div class="logo">CodeMaster</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#curriculum">Curriculum</a></li>
+          <li><a href="#instructors">Instructors</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="cta-button">
+        <a href="#pricing" class="btn btn-primary">Enroll Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="offer-badge">
+            <span>Limited Time Offer</span>
+            <div class="countdown" id="countdown">
+              <div class="time-block">
+                <span class="days">00</span>
+                <span class="time-label">Days</span>
+              </div>
+              <div class="time-block">
+                <span class="hours">00</span>
+                <span class="time-label">Hours</span>
+              </div>
+              <div class="time-block">
+                <span class="minutes">00</span>
+                <span class="time-label">Mins</span>
+              </div>
+              <div class="time-block">
+                <span class="seconds">00</span>
+                <span class="time-label">Secs</span>
+              </div>
+            </div>
+          </div>
+          <h1>Become a Fullstack Developer in <span class="highlight">12 Weeks</span></h1>
+          <p>Master the essential skills needed to build complete web applications from scratch. No prior experience required.</p>
+          <div class="hero-buttons">
+            <a href="#pricing" class="btn btn-primary">Get Started Today</a>
+            <a href="#curriculum" class="btn btn-secondary">View Curriculum</a>
+          </div>
+          <div class="social-proof">
+            <div class="ratings">
+              <span class="stars">★★★★★</span>
+              <span>4.9/5 from 2,400+ students</span>
+            </div>
+            <div class="companies">
+              <p>Our graduates work at:</p>
+              <div class="company-logos">
+                <span>Google</span>
+                <span>Meta</span>
+                <span>Amazon</span>
+                <span>Microsoft</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="hero-image-container">
+            <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Student coding" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Choose Our Course?</h2>
+          <p>Our comprehensive program is designed to take you from zero to professional developer with everything you need to succeed.</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card" data-aos="fade-up">
+            <div class="feature-icon">📚</div>
+            <h3>Comprehensive Curriculum</h3>
+            <p>Cover everything from HTML and CSS to advanced React, Node.js, and database management.</p>
+          </div>
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-icon">👨‍💻</div>
+            <h3>Hands-on Projects</h3>
+            <p>Build 8 real-world projects that you can add to your portfolio right away.</p>
+          </div>
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-icon">🤝</div>
+            <h3>1-on-1 Mentorship</h3>
+            <p>Weekly sessions with experienced developers to guide your learning journey.</p>
+          </div>
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-icon">🌐</div>
+            <h3>Career Support</h3>
+            <p>Resume reviews, interview preparation, and job placement assistance.</p>
+          </div>
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="feature-icon">🏆</div>
+            <h3>Industry Certificate</h3>
+            <p>Earn a recognized certificate to showcase your skills to employers.</p>
+          </div>
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="feature-icon">👥</div>
+            <h3>Community Access</h3>
+            <p>Join our exclusive community of learners and alumni for networking.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="curriculum" class="curriculum">
+      <div class="container">
+        <div class="section-header">
+          <h2>Course Curriculum</h2>
+          <p>Our carefully structured curriculum takes you from the basics to advanced concepts, ensuring you build a solid foundation.</p>
+        </div>
+        <div class="curriculum-timeline">
+          <div class="timeline-module" data-module="1">
+            <div class="module-header">
+              <h3>Module 1: Web Fundamentals</h3>
+              <span class="module-toggle">+</span>
+            </div>
+            <div class="module-content">
+              <ul>
+                <li>HTML5 structure and semantic elements</li>
+                <li>CSS fundamentals and responsive design</li>
+                <li>JavaScript basics and DOM manipulation</li>
+                <li>Git version control and collaboration</li>
+                <li>Project: Personal portfolio website</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="timeline-module" data-module="2">
+            <div class="module-header">
+              <h3>Module 2: Frontend Development</h3>
+              <span class="module-toggle">+</span>
+            </div>
+            <div class="module-content">
+              <ul>
+                <li>Advanced CSS techniques and animations</li>
+                <li>JavaScript ES6+ features</li>
+                <li>Working with APIs and fetch</li>
+                <li>Modern CSS frameworks</li>
+                <li>Project: Interactive dashboard</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="timeline-module" data-module="3">
+            <div class="module-header">
+              <h3>Module 3: Backend Basics</h3>
+              <span class="module-toggle">+</span>
+            </div>
+            <div class="module-content">
+              <ul>
+                <li>Node.js fundamentals</li>
+                <li>Express.js and RESTful API design</li>
+                <li>Database design principles</li>
+                <li>SQL and NoSQL databases</li>
+                <li>Project: API development</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="timeline-module" data-module="4">
+            <div class="module-header">
+              <h3>Module 4: Fullstack Integration</h3>
+              <span class="module-toggle">+</span>
+            </div>
+            <div class="module-content">
+              <ul>
+                <li>Authentication and authorization</li>
+                <li>Deployment and hosting</li>
+                <li>Performance optimization</li>
+                <li>Testing and debugging</li>
+                <li>Capstone Project: Complete web application</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="instructors" class="instructors">
+      <div class="container">
+        <div class="section-header">
+          <h2>Meet Your Instructors</h2>
+          <p>Learn from industry professionals with years of real-world experience.</p>
+        </div>
+        <div class="instructors-grid">
+          <div class="instructor-card">
+            <div class="instructor-image">
+              <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Michael Johnson" />
+            </div>
+            <h3>Michael Johnson</h3>
+            <p class="instructor-title">Lead Instructor, Frontend</p>
+            <p class="instructor-bio">10+ years of experience at Google and Meta. Specialized in modern frontend architectures and performance optimization.</p>
+            <div class="instructor-social">
+              <a href="#" class="social-link">LinkedIn</a>
+              <a href="#" class="social-link">GitHub</a>
+            </div>
+          </div>
+          
+          <div class="instructor-card">
+            <div class="instructor-image">
+              <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sarah Chen" />
+            </div>
+            <h3>Sarah Chen</h3>
+            <p class="instructor-title">Lead Instructor, Backend</p>
+            <p class="instructor-bio">Former Amazon senior engineer with expertise in scalable backend systems, database optimization, and cloud infrastructure.</p>
+            <div class="instructor-social">
+              <a href="#" class="social-link">LinkedIn</a>
+              <a href="#" class="social-link">GitHub</a>
+            </div>
+          </div>
+          
+          <div class="instructor-card">
+            <div class="instructor-image">
+              <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="David Rodriguez" />
+            </div>
+            <h3>David Rodriguez</h3>
+            <p class="instructor-title">Career Coach</p>
+            <p class="instructor-bio">Tech recruiter turned career coach who has helped 500+ developers land their dream jobs at top tech companies.</p>
+            <div class="instructor-social">
+              <a href="#" class="social-link">LinkedIn</a>
+              <a href="#" class="social-link">Twitter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>What Our Students Say</h2>
+          <p>Hear from people who have transformed their careers with our program.</p>
+        </div>
+        <div class="testimonial-carousel">
+          <div class="testimonial-track" id="testimonial-track">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>"This course completely changed my career trajectory. I went from a retail job to a junior developer role at a tech startup in just 4 months after completing the program."</p>
+              </div>
+              <div class="testimonial-author">
+                <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Jessica P." />
+                <div class="author-info">
+                  <h4>Jessica P.</h4>
+                  <p>Frontend Developer at TechCorp</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>"The hands-on projects were invaluable. Building real applications rather than just following tutorials made all the difference in developing practical skills that employers want."</p>
+              </div>
+              <div class="testimonial-author">
+                <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Marcus T." />
+                <div class="author-info">
+                  <h4>Marcus T.</h4>
+                  <p>Full Stack Developer at InnovateCo</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>"As someone with zero coding experience, I was worried about keeping up. But the step-by-step curriculum and amazing support from instructors made the learning process smooth and enjoyable."</p>
+              </div>
+              <div class="testimonial-author">
+                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Aisha K." />
+                <div class="author-info">
+                  <h4>Aisha K.</h4>
+                  <p>Junior Developer at WebSolutions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button id="prev-testimonial" class="carousel-control prev">←</button>
+            <div class="carousel-dots" id="carousel-dots"></div>
+            <button id="next-testimonial" class="carousel-control next">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+      <div class="container">
+        <div class="section-header">
+          <h2>Investment in Your Future</h2>
+          <p>Choose the plan that works best for your learning goals and budget.</p>
+        </div>
+        <div class="pricing-cards">
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3>Self-Paced</h3>
+              <div class="pricing-amount">
+                <span class="currency">$</span>
+                <span class="amount">999</span>
+              </div>
+              <p class="pricing-period">one-time payment</p>
+            </div>
+            <div class="pricing-features">
+              <ul>
+                <li>✓ Full course curriculum</li>
+                <li>✓ Lifetime access to materials</li>
+                <li>✓ Community forum access</li>
+                <li>✓ Certificate of completion</li>
+                <li class="feature-disabled">✗ 1-on-1 mentorship</li>
+                <li class="feature-disabled">✗ Career coaching</li>
+                <li class="feature-disabled">✗ Job placement assistance</li>
+              </ul>
+            </div>
+            <div class="pricing-action">
+              <a href="#" class="btn btn-secondary">Enroll Now</a>
+            </div>
+          </div>
+          
+          <div class="pricing-card featured">
+            <div class="pricing-badge">Most Popular</div>
+            <div class="pricing-header">
+              <h3>Premium</h3>
+              <div class="pricing-amount">
+                <span class="currency">$</span>
+                <span class="amount">1,999</span>
+              </div>
+              <p class="pricing-period">or $399/month for 6 months</p>
+            </div>
+            <div class="pricing-features">
+              <ul>
+                <li>✓ Full course curriculum</li>
+                <li>✓ Lifetime access to materials</li>
+                <li>✓ Community forum access</li>
+                <li>✓ Certificate of completion</li>
+                <li>✓ Bi-weekly 1-on-1 mentorship</li>
+                <li>✓ Resume and portfolio review</li>
+                <li class="feature-disabled">✗ Job placement assistance</li>
+              </ul>
+            </div>
+            <div class="pricing-action">
+              <a href="#" class="btn btn-primary">Enroll Now</a>
+            </div>
+          </div>
+          
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3>Career Track</h3>
+              <div class="pricing-amount">
+                <span class="currency">$</span>
+                <span class="amount">2,999</span>
+              </div>
+              <p class="pricing-period">or $499/month for 7 months</p>
+            </div>
+            <div class="pricing-features">
+              <ul>
+                <li>✓ Full course curriculum</li>
+                <li>✓ Lifetime access to materials</li>
+                <li>✓ Priority community access</li>
+                <li>✓ Certificate of completion</li>
+                <li>✓ Weekly 1-on-1 mentorship</li>
+                <li>✓ Comprehensive career coaching</li>
+                <li>✓ Job placement guarantee*</li>
+              </ul>
+            </div>
+            <div class="pricing-action">
+              <a href="#" class="btn btn-secondary">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="pricing-guarantee">
+          <p>*Job guarantee: If you don't find a developer job within 6 months of completing the program, we'll refund your tuition.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>Get answers to common questions about our program.</p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Do I need prior coding experience?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>No prior experience is required. Our curriculum starts from the absolute basics and gradually builds up to advanced concepts. We've designed the course specifically with beginners in mind.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How much time should I commit weekly?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>For optimal results, we recommend dedicating 15-20 hours per week to the course. This includes watching lectures, completing exercises, working on projects, and participating in mentorship sessions.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What kind of support will I receive?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Depending on your plan, you'll have access to our community forum, regular office hours, and 1-on-1 mentorship sessions. Our instructors and teaching assistants are committed to helping you succeed.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Will I build a portfolio during the course?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Absolutely! You'll complete 8 projects throughout the course, culminating in a capstone project. These projects are designed to showcase different skills and will form a strong portfolio to present to potential employers.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How does the job guarantee work?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>For Career Track students, if you don't secure a job within 6 months of completing the program while actively applying and following our career guidance, we'll refund your tuition. Full details are provided in the enrollment agreement.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Can I pay in installments?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, we offer monthly payment plans for our Premium and Career Track options. We also partner with several financing providers to make the course more accessible.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta" class="cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Transform Your Career?</h2>
+          <p>Join over 10,000 graduates who have successfully launched their careers in tech.</p>
+          <div class="cta-buttons">
+            <a href="#pricing" class="btn btn-primary">Enroll Now</a>
+            <a href="#" class="btn btn-outline">Schedule a Call</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">CodeMaster</div>
+          <p>Transforming beginners into professional fullstack developers since 2018.</p>
+          <div class="footer-social">
+            <a href="#" class="social-icon">FB</a>
+            <a href="#" class="social-icon">TW</a>
+            <a href="#" class="social-icon">IG</a>
+            <a href="#" class="social-icon">LI</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#curriculum">Curriculum</a></li>
+            <li><a href="#instructors">Instructors</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Student Stories</a></li>
+            <li><a href="#">Career Guide</a></li>
+            <li><a href="#">Free Tutorials</a></li>
+            <li><a href="#">Learning Path</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul>
+            <li>Email: hello@codemaster.com</li>
+            <li>Phone: (555) 123-4567</li>
+            <li>Address: 123 Tech Street, San Francisco, CA 94105</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 CodeMaster. All rights reserved.</p>
+        <ul class="footer-legal">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
